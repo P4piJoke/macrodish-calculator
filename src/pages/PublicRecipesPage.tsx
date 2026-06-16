@@ -21,7 +21,7 @@ export default function PublicRecipesPage() {
 
   return (
     <PageWrapper>
-      <div className="mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
         <h1 className="text-2xl font-bold text-gray-800">Public Recipes</h1>
         <p className="text-sm text-gray-400 mt-0.5">
           Recipes shared by the MacroDish community.
@@ -34,7 +34,7 @@ export default function PublicRecipesPage() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search recipes..."
-        className="w-full max-w-sm border border-gray-300 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 mb-6"
+        className="w-full sm:w-auto sm:max-w-sm border border-gray-300 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 mb-6"
       />
 
       {loading && (

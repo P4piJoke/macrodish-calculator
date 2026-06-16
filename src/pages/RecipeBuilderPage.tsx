@@ -143,7 +143,7 @@ export default function RecipeBuilderPage() {
 
   return (
     <PageWrapper>
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-gray-800">Recipe Builder</h1>
           <p className="text-sm text-gray-400 mt-0.5">
@@ -151,7 +151,7 @@ export default function RecipeBuilderPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 self-start sm:self-auto">
           {/* Export button — only when recipe has data */}
           {recipe.ingredients.length > 0 && recipe.cookedWeightGrams > 0 && (
             <button
@@ -194,7 +194,7 @@ export default function RecipeBuilderPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
 
         {/* ── Left panel — ingredients ── */}
         <div className="lg:col-span-2 space-y-4">
