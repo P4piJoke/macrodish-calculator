@@ -1,5 +1,4 @@
 import { type Ingredient } from "../../types/Ingredient";
-import { calcPer100gCooked } from "../../utils/macroCalculator";
 
 interface Props {
   ingredient: Ingredient;

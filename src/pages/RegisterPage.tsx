@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
-import { getAllBrands, registerBrand } from "../services/brand.service";
+import { getAllBrands } from "../services/brand.service";
 import { type Brand } from "../types/Brand";
 import { type UserRole } from "../types/User";
 

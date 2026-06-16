@@ -12,7 +12,7 @@ import { type Product } from "../types/Product";
 
 export default function ProductDictionaryPage() {
   const { userProfile } = useAuth();
-  const { products, loading, search: searchFn } = useProducts();
+  const { products, loading } = useProducts();
   const [query, setQuery] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [localList, setLocalList] = useState<Product[]>([]);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Modal from "../ui/Modal";
-import { addProduct, getAllProducts } from "../../services/product.service";
+import { addProduct } from "../../services/product.service";
 import { getAllBrands } from "../../services/brand.service";
 import { validateProduct } from "../../utils/validators";
 import { type Product } from "../../types/Product";
